@@ -1,10 +1,39 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #b49078;
     margin-top: 0px;
 }
 
 .navbar{
-    background-color: #9e7a50;
+    background-color: #cabdae;
     margin: auto -8px;
-    padding: 8px;
+    padding: 0px;
+    text-align: right;
+    border: solid rgb(121, 88, 88);
+    border-width: 1px;
+}
+
+.navButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 12px;
+    border: 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.navButton:hover{
+    background-color: #aa875d;
+
+}
+
+.introImages{
+    display: flex;
+    justify-content: center;
+}
+
+.introImages #heading{
+    position: absolute;
+    
 }
