@@ -31,9 +31,70 @@ body{
 .introImages{
     display: flex;
     justify-content: center;
+    height: 800px;
 }
 
 .introImages #heading{
     position: absolute;
     
 }
+
+.slideshow {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideContainer {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    animation: slideshow 20s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slideImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slideshow {
+    0%, 10% { left: 0; }
+    15%, 25% { left: -100%; }
+    30%, 40% { left: -200%; }
+    45%, 55% { left: -300%; }
+    60%, 70% { left: -200%; }
+    75%, 85% { left: -100%; }
+    90%, 100% { left: 0; }
+}
+
+.slideBtn {
+    background-color: #bbb;
+    border-radius: 50%;
+    border: .2rem solid #d38800;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+}
+
+.slideBtn.one { left: 45%; }
+.slideBtn.two { left: 50%; }
+.slideBtn.three { left: 55%; }
+.slideBtn.four { left: 60%; }
+
+.slideBtn.one:focus ~ .slideContainer { animation: none; left: 0; }
+.slideBtn.two:focus ~ .slideContainer { animation: none; left: -100%; }
+.slideBtn.three:focus ~ .slideContainer { animation: none; left: -200%; }
+.slideBtn.four:focus ~ .slideContainer { animation: none; left: -300%; }
