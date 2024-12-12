@@ -1,16 +1,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #b49078;
+    /*background-color: #b49078;*/
+    background-color: #E9ECEF;
     margin-top: 0px;
 }
 
 .navbar{
-    background-color: #cabdae;
+    background-color: #ADB5BD;
+    display: flex;
     margin: auto -8px;
     padding: 0px;
     text-align: right;
     border: solid rgb(121, 88, 88);
-    border-width: 1px;
+    border-width: 0px;
+    height: 4rem;
+}
+
+.navButtons {
+    display: flex;
+    margin-left: auto;
+    height: 4rem;
 }
 
 .navButton{
@@ -35,14 +44,32 @@ body{
 }
 
 .introImages #heading{
+    font-family: sans-serif;
     position: absolute;
-    
+    top: 10%;
+    color: white;
+    z-index: 1;
+    /*background-color: #88827c21;
+    height: 2rem;*/
+}
+
+.blurb {
+    display: flex;
+    justify-content: center;
+}
+
+.scheduleHeading {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .slideshow {
-    height: 100%;
+    width: 85%;
+    height: 90%;
     overflow: hidden;
     position: relative;
+    margin: 2rem;
 }
 
 .slideContainer {
@@ -62,8 +89,10 @@ body{
 .slideImg {
     width: 100%;
     height: 100%;
+    filter: brightness(50%);
     object-fit: cover;
 }
+
 
 @keyframes slideshow {
     0%, 10% { left: 0; }
