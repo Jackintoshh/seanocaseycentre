@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Calibri, Helvetica, sans-serif;
     /*background-color: #b49078;*/
-    background-color: #E9ECEF;
-    margin-top: 0px;
+    background-color: #f6f8fa;
+    margin: 0px 8px 8px 8px;
 }
 
 .navbar{
-    background-color: #ADB5BD;
+    background-color: #ffffff;
+    /*background-color: rgb(86, 202, 202);*/
     display: flex;
     margin: auto -8px;
     padding: 0px;
@@ -20,20 +23,30 @@ body{
     display: flex;
     margin-left: auto;
     height: 4rem;
+    align-items: center;
+}
+
+.navButtons a {
+    display: flex;
+    padding: 0px 8px;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
 }
 
 .navButton{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Calibri, Arial, Helvetica, sans-serif;
     font-size: 18px;
     background-color: transparent;
-    padding: 12px;
-    border: 2px;
-    transition-duration: 0.2s;
     cursor: pointer;
+    border: 2px;
+    
 }
 
-.navButton:hover{
+.navButtons a:hover{
     background-color: #aa875d;
+    transition-duration: 0.2s;
+    cursor: pointer;
 
 }
 
@@ -41,10 +54,13 @@ body{
     display: flex;
     justify-content: center;
     height: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    /*background-color: rgb(94, 226, 226);*/
 }
 
 .introImages #heading{
-    font-family: sans-serif;
+    font-family: Montserrat, Calibri, Arial, Helvetica, sans-serif;
     position: absolute;
     top: 10%;
     color: white;
@@ -67,6 +83,8 @@ body{
 .scheduleContainer {
     display: flex;
     justify-content: center;
+    margin: 12px;
+    margin-bottom: 8rem;
     
 }
 
@@ -83,7 +101,7 @@ body{
 
 .schedBody th {
     height: 3rem;
-    padding: 8px;
+    padding: 0px;
 }
 
 .thdiv {
@@ -105,6 +123,100 @@ th {
     border-width: 1px;
     padding: 8px;
 }
+
+.cardsContainer {
+    margin-top: 3rem;
+    /*background-color: rgb(137, 196, 216);*/
+    /*background-color: rgb(94, 226, 226);*/
+    background-color: rgb(152, 255, 255);
+    padding-top: 5rem;
+    color: #616800
+}
+
+.cardText {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 2ch;
+    gap: 60px;
+    /*background-color: white;*/
+    
+    
+}
+
+.cardText h2 {
+   
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 42px;
+    font-family: Lora;
+    width: 70%;
+    /*white-space: nowrap;*/
+}
+
+.cardTextBody {
+    width: 70%;
+    
+}
+
+.cardTextBody ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 550;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 5%;
+    margin-right: 0;
+}
+
+.card img {
+    width: 40%;
+    /*max-width: 20%;*/
+}
+
+.cardTextButton {
+    width: 75px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(216, 211, 211);
+}
+
+.contactFooter {
+    padding: 2rem;
+}
+
+.contactFooter ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+
+.googleMap {
+    padding: 12px;
+    position: relative;
+}
+
+.googleMap iframe {
+    
+    left: 0;
+    top: 0;
+    
+}
+
 
 .slideshow {
     width: 85%;
@@ -169,3 +281,85 @@ th {
 .slideBtn.two:focus ~ .slideContainer { animation: none; left: -100%; }
 .slideBtn.three:focus ~ .slideContainer { animation: none; left: -200%; }
 .slideBtn.four:focus ~ .slideContainer { animation: none; left: -300%; }
+
+
+.aboutContainer {
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 16px;
+}
+
+.aboutTitle {
+    display: flex;
+    font-family: Lora, sans-serif;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
+
+.aboutBody {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 56px;
+    padding: 8px;
+    /*align-items: center;*/
+    /*gap: 24px;*/
+    /*width: 80%;*/
+}
+
+.aboutBodyText {
+    width: 30%;
+    margin: auto 0px;
+    
+}
+
+.aboutBody img {
+    width: 50%;
+    height: 50%;
+}
+
+.facTitle {
+    text-align: center;
+    margin: 42px 12px ;
+    font-family: Lora;
+}
+
+.facRow {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    margin-bottom: 42px;
+    /*gap: 64px;*/
+}
+
+.facNode {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.facRow img {
+    width: 50%;
+}
+
+.facRow div {
+    width: 60%;
+}
+
+.facBooking ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.facBooking {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.bookingContainer {
+   
+}
