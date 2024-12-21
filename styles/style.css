@@ -7,10 +7,15 @@ body{
     margin: 0px 8px 8px 8px;
 }
 
+#logo {
+    padding: 6px;
+}
+
 .navbar{
     background-color: #ffffff;
     /*background-color: rgb(86, 202, 202);*/
     display: flex;
+    justify-content: space-around;
     margin: auto -8px;
     padding: 0px;
     text-align: right;
@@ -21,7 +26,7 @@ body{
 
 .navButtons {
     display: flex;
-    margin-left: auto;
+    /*margin-left: auto;*/
     height: 4rem;
     align-items: center;
 }
@@ -408,4 +413,82 @@ footer {
 .actRow.art img{
     margin: 8px;
     width: 15%;
+}
+
+.ceTitle {
+    text-align: center;
+    font-family: Lora, sans-serif;
+}
+
+.ceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ceContent h2 {
+    
+}
+
+.ce1Container {
+    width: 100%;
+}
+
+.ceContent div {
+    width: 50%;
+    margin: 2%;
+    font-size: 18px;
+}
+
+#ceContent1 {
+    font-size: 28px;
+    width: 80%;
+    margin: auto 0px;
+}
+
+#ceContent2 {
+    width: 60%;
+    margin: 0px;
+}
+
+#ceContent3 {
+    margin-bottom: 10%;
+}
+
+.contactTitle {
+    font-family: Lora, sans-serif;
+    text-align: center;
+}
+
+.contactContainer {
+    margin: 24px;
+    margin-top: 10%;
+}
+
+.contactMainInfo {
+    margin-left: 5%;
+    margin-bottom: 15%;
+}
+
+.contactMainInfo ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainInfo1 {
+    font-size: 24px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#mainInfo2 {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+#mainInfo3 {
+    font-size: 20px;
+    width: 40%;
 }
