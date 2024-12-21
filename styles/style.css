@@ -320,6 +320,11 @@ footer {
     height: 50%;
 }
 
+.facContainer {
+    width: 80%;
+    margin: auto;
+}
+
 .facTitle {
     text-align: center;
     margin: 42px 12px ;
@@ -362,4 +367,45 @@ footer {
 
 .bookingContainer {
    
+}
+
+.actTitle {
+    text-align: center;
+    font-family: Lora, sans-serif;
+}
+
+.actRow {
+    display: flex;
+    margin: 5%;
+}
+
+.actRow img {
+    width: 40%;
+    height: 90%;
+}
+
+.actRowBody {
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.actRowBody div {
+    margin-bottom: 2%;
+}
+
+.actRowBody ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 12px;
+}
+
+.actRow.art {
+    text-align: center;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.actRow.art img{
+    margin: 8px;
+    width: 15%;
 }
